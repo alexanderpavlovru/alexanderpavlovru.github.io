@@ -3,33 +3,53 @@
 
 <head>
     <meta charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexander Pavlov</title>
     <style>
-        .content {
-            margin: 0 auto;
-            width: 500px;
-            max-width: 95%;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
-
-        .center {
+        header {
             text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            height: 100vh;;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li a {
+            font-size: 18px;
+        }
+        li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <div class="center">
+    <div class="container">
+        <header>
             <h1>Alexander Pavlov</h1>
-            <h4>Senior Software Engineer<h4>
-        </div>
+            <p>Senior Software Engineer</p>
+        </header>
         <ul>
-            <li>
-                <a href="/assets/cv/alexander_pavlov_cv_en.pdf">CV en</a>
-            </li>
-            <li>
-                <a href="/assets/cv/alexander_pavlov_cv_ru.pdf">CV ru</a>
-            </li>
+            <li><a href="/assets/cv/alexander_pavlov_cv_en.pdf" target="_blank">CV en</a></li>
+            <li><a href="/assets/cv/alexander_pavlov_cv_ru.pdf" target="_blank">CV ru</a></li>
         </ul>
     </div>
 </body>
